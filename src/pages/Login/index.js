@@ -1,5 +1,7 @@
 import React from "react"
 import Button from "components/Button"
+import Input from "components/Input"
+import { StyledForm } from "./styled"
 
 class Login extends React.Component {
   constructor() {
@@ -17,15 +19,15 @@ class Login extends React.Component {
     return (
       <div>
         <h2>Login</h2>
-        <form onSubmit={this.handleSubmit}>
-          <input
+        <StyledForm onSubmit={this.handleSubmit}>
+          <Input
             type="email"
             placeholder="email@xx.xx"
             value={this.state.email}
             onChange={e => this.setState({ email: e.target.value })}
           />
           <br />
-          <input
+          <Input
             type="password"
             placeholder="*****"
             value={this.state.pw}
@@ -33,7 +35,7 @@ class Login extends React.Component {
           />{" "}
           <br />
           <Button type="button" text="Submit" />
-        </form>
+        </StyledForm>
       </div>
     )
   }
