@@ -1,13 +1,15 @@
 import React from "react"
 import Button from "components/Button"
 import Input from "components/Input"
-import { StyledForm } from "./styled"
+import { StyledForm, Field, Label } from "styled/Forms"
+import { StyledPage } from "styled/Page"
+import { StyledTitle } from "styled/Typography"
 
 class Login extends React.Component {
   constructor() {
     super()
     this.state = {
-      email: "",
+      username: "",
       pw: ""
     }
   }
@@ -17,26 +19,29 @@ class Login extends React.Component {
 
   render() {
     return (
-      <div>
-        <h2>Login</h2>
-        <StyledForm onSubmit={this.handleSubmit}>
-          <Input
-            type="email"
-            placeholder="email@xx.xx"
-            value={this.state.email}
-            onChange={e => this.setState({ email: e.target.value })}
-          />
-          <br />
-          <Input
-            type="password"
-            placeholder="*****"
-            value={this.state.pw}
-            onChange={e => this.setState({ pw: e.target.value })}
-          />{" "}
-          <br />
-          <Button type="button" text="Submit" />
+      <StyledPage>
+        <StyledForm text="Sign-In" onSubmit={this.handleSubmit}>
+          <StyledTitle>Sign-In</StyledTitle>
+          <Field>
+            <Label>Username:</Label>
+            <Input
+              type="text"
+              value={this.state.username}
+              onChange={x => this.setState({ username: x })}
+            />
+          </Field>
+
+          <Field>
+            <Label>Password</Label>
+            <Input
+              type="password"
+              value={this.state.pw}
+              onChange={x => this.setState({ pw: x })}
+            />
+          </Field>
+          <Button type="button" secondary full text="Sign-in" />
         </StyledForm>
-      </div>
+      </StyledPage>
     )
   }
 }

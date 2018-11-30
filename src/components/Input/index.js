@@ -1,5 +1,7 @@
 import React from "react"
 import { StyledInput } from "./styled"
 
-const Input = p => <StyledInput {...p} />
+const Input = ({ onChange, ...rest }) => (
+  <StyledInput {...rest} onChange={e => onChange(e.target.value)} />
+)
 export default Input
