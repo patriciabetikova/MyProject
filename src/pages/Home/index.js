@@ -6,50 +6,72 @@ class Home extends React.Component {
     return (
       <Page>
         <p>
-          Paul Rand once said, “The public is more familiar with bad fucking
-          design than good design. It is, in effect, conditioned to prefer bad
-          design, because that is what it lives with. The new becomes
-          threatening, the old reassuring.” When you sit down to work, external
-          critics aren’t the enemy. It’s you who you must to fight against to do
-          great fucking work. You must overcome yourself. The graphic designer’s
-          first fucking consideration is always the size and shape of the
-          format, whether for the printed page or for digital display. You are
-          not your fucking work. Never, never assume that what you have achieved
-          is fucking good enough. Creativity is a fucking work-ethic. When you
-          design, you have to draw on your own fucking life experiences. If it’s
-          not something you would want to read/look at/use then why fucking
-          bother? Don’t fucking lie to yourself. If you fucking give up, you
-          will achieve nothing. When you sit down to work, external critics
-          aren’t the enemy. It’s you who you must to fight against to do great
-          fucking work. You must overcome yourself. Think about all the fucking
-          possibilities. If you fucking give up, you will achieve nothing. Never
-          let your guard down by thinking you’re fucking good enough. Paul Rand
-          once said, “The public is more familiar with bad fucking design than
-          good design. It is, in effect, conditioned to prefer bad design,
-          because that is what it lives with. The new becomes threatening, the
-          old reassuring.” When you design, you have to draw on your own fucking
-          life experiences. If it’s not something you would want to read/look
-          at/use then why fucking bother? Form follows fucking function. This
-          design is fucking brilliant. Must-do is a good fucking master.
-          Creativity is a fucking work-ethic. Think about all the fucking
-          possibilities. Think about all the fucking possibilities. Must-do is a
-          good fucking master. Design as if your fucking life depended on it.
-          You are not your fucking work. Design is all about fucking
-          relationships—the relationship of form and content, the relationship
-          of elements, the relationship of designer and user. Respect your
-          fucking craft. Saul Bass on failure: Failure is built into creativity…
-          the creative act involves this element of ‘newness’ and
-          ‘experimentalism,’ then one must expect and accept the fucking
-          possibility of failure. To go partway is easy, but mastering anything
-          requires hard fucking work. Never let your guard down by thinking
-          you’re fucking good enough. You need to sit down and sketch more
-          fucking ideas because stalking your ex on facebook isn’t going to get
-          you anywhere. You won’t get good at anything by doing it a lot fucking
-          aimlessly. Respect your fucking craft. Don’t get hung up on things
-          that don’t fucking work. Use your fucking hands. Dedicate yourself to
-          lifelong fucking learning. Must-do is a good fucking master. Never let
-          your guard down by thinking you’re fucking good enough. Remember it’s
-          called the creative process, it’s not the creative fucking moment.
+          Bender, you risked your life to save me! Now that the, uh, garbage
+          ball is in space, Doctor, perhaps you can help me with my sexual
+          inhibitions? Large bet on myself in round one. But I know you in the
+          future. I cleaned your poop.
+        </p>
+        <p>
+          {" "}
+          Guess again. We can't compete with Mom! Her company is big and evil!
+          Ours is small and neutral! I could if you hadn't turned on the light
+          and shut off my stereo. You seem malnourished. Are you suffering from
+          intestinal parasites?
+        </p>
+        <p>
+          I don't want to be rescued. Or a guy who burns down a bar for the
+          insurance money! Who said that? SURE you can die! You want to die?!
+          Well I'da done better, but it's plum hard pleading a case while
+          awaiting trial for that there incompetence.
+        </p>
+        <p>
+          You wouldn't. Ask anyway! And so we say goodbye to our beloved pet,
+          Nibbler, who's gone to a place where I, too, hope one day to go. The
+          toilet. Well, then good news! It's a suppository. It doesn't look so
+          shiny to me.
+        </p>
+        <p>
+          Check it out, y'all. Everyone who was invited is here. Oh, I don't
+          have time for this. I have to go and buy a single piece of fruit with
+          a coupon and then return it, making people wait behind me while I
+          complain.
+        </p>
+        <p>
+          If rubbin' frozen dirt in your crotch is wrong, hey I don't wanna be
+          right. So I really am important? How I feel when I'm drunk is correct?
+          Oh yeah, good luck with that. Can I use the gun?
+        </p>
+        <p>
+          We're rescuing ya. No, just a regular mistake. Alright, let's mafia
+          things up a bit. Joey, burn down the ship. Clamps, burn down the crew.
+          Oh, but you can. But you may have to metaphorically make a deal with
+          the devil. And by "devil", I mean Robot Devil. And by
+          "metaphorically", I mean get your coat.
+        </p>
+        <p>
+          You seem malnourished. Are you suffering from intestinal parasites? I
+          don't know what you did, Fry, but once again, you screwed up! Now all
+          the planets are gonna start cracking wise about our mamas. Guess
+          again. Goodbye, cruel world.
+        </p>
+        <p>
+          Goodbye, cruel lamp. Goodbye, cruel velvet drapes, lined with what
+          would appear to be some sort of cruel muslin and the cute little
+          pom-pom curtain pull cords. Cruel though they may be… You wouldn't.
+          Ask anyway!
+        </p>
+        <p>
+          Our love isn't any different from yours, except it's hotter, because
+          I'm involved. Hello, little man. I will destroy you! Michelle, I don't
+          regret this, but I both rue and lament it. Doomsday device? Ah, now
+          the ball's in Farnsworth's court!
+        </p>
+        <p>
+          I had more, but you go ahead. Stop it, stop it. It's fine. I will
+          'destroy' you! I suppose I could part with 'one' and still be feared…
+          This opera's as lousy as it is brilliant! Your lyrics lack subtlety.
+          You can't just have your characters announce how they feel. That makes
+          me feel angry!
         </p>
       </Page>
     )
