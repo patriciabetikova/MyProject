@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components"
+import theme from "theme"
 
 export const TodoWrap = styled.span`
   display: flex;
@@ -9,14 +10,13 @@ export const TodoWrap = styled.span`
 
   button {
     padding: 0;
-
     height: auto;
     width: 15px;
   }
   input {
     height: 30px;
     width: 300px;
-    background: rgb(51, 38, 0);
+    background: lightsalmon;
   }
   h3 {
     width: 80px;
@@ -32,7 +32,6 @@ export const TodoWrap = styled.span`
       }
     `}
 `
-
 export const Li = styled.p`
   text-transform: uppercase;
   margin: 0 0 0 20px;
