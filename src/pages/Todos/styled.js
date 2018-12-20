@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components"
-import theme from "theme"
 
 export const TodoWrap = styled.span`
   display: flex;

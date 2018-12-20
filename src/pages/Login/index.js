@@ -1,49 +1,38 @@
 import React from "react"
 import Button from "components/Button"
 import Input from "components/Input"
-import { StyledForm, Field, Label } from "styled/Forms"
+import { StyledForm, StyledField, Label } from "styled/Forms"
 import { StyledPage } from "styled/Page"
 import { StyledTitle } from "styled/Typography"
+import withState from "hocs/withState"
 
-class Login extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      username: "",
-      pw: ""
-    }
-  }
-  handleSubmit = e => {
-    e.preventDefault()
-  }
+const Login = props => (
+  <StyledPage>
+    <StyledForm text="Sign-In" onSubmit={e => e.preventDefault()}>
+      <StyledTitle>Sign-In</StyledTitle>
+      <StyledField>
+        <Label>Username:</Label>
+        <Input
+          type="text"
+          value={props.v.username}
+          onChange={x => props.setV({ ...props.v, username: x })}
+        />
+      </StyledField>
 
-  render() {
-    return (
-      <StyledPage>
-        <StyledForm text="Sign-In" onSubmit={this.handleSubmit}>
-          <StyledTitle>Sign-In</StyledTitle>
-          <Field>
-            <Label>Username:</Label>
-            <Input
-              type="text"
-              value={this.state.username}
-              onChange={x => this.setState({ username: x })}
-            />
-          </Field>
+      <StyledField>
+        <Label>Password</Label>
+        <Input
+          type="password"
+          value={props.v.pw}
+          onChange={x => props.setV({ ...props.v, pw: x })}
+        />
+      </StyledField>
+      <Button type="button" secondary full text="Sign-in" />
+    </StyledForm>
+  </StyledPage>
+)
 
-          <Field>
-            <Label>Password</Label>
-            <Input
-              type="password"
-              value={this.state.pw}
-              onChange={x => this.setState({ pw: x })}
-            />
-          </Field>
-          <Button type="button" secondary full text="Sign-in" />
-        </StyledForm>
-      </StyledPage>
-    )
-  }
-}
-
-export default Login
+export default withState("v", "setV", {
+  username: "",
+  pw: ""
+})(Login)

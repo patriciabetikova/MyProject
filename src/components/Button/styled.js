@@ -28,4 +28,10 @@ export const StyledButton = styled.button`
     css`
       width: 100%;
     `}
+  ${p =>
+    p.disabled &&
+    css`
+      opacity: 0.3;
+      pointer-events: none;
+    `}
 `

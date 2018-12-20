@@ -15,7 +15,7 @@ export const StyledForm = styled.form`
     padding: 20px 40px;
   }
 `
-export const Field = styled.label`
+export const StyledField = styled.label`
   margin-bottom: 10px;
   display: block;
   @media screen and (min-width: 800px) {
@@ -24,7 +24,7 @@ export const Field = styled.label`
     justify-content: space-between;
     align-items: center;
 
-    input {
+    > *:last-child {
       width: 250px;
     }
   }
@@ -33,4 +33,15 @@ export const Label = styled.h4`
   font-weight: 500;
   font-size: 14px;
   margin: 0 0 5px;
+`
+
+export const InlineField = styled.label``
+
+export const StyledLink = styled.span`
+  text-decoration: underline;
+  display: inline;
+  margin-left: 3px;
+  & hover {
+    color: red;
+  }
 `
